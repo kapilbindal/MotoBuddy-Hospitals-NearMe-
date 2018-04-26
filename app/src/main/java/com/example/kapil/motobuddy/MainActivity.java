@@ -1,6 +1,7 @@
 package com.example.kapil.motobuddy;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -108,6 +109,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                             public void onComplete(@NonNull Task<Void> task) {
                             }
                         });
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
         }
     }
 
