@@ -29,9 +29,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Login");
-
         edEmail = findViewById(R.id.edEmail);
         edPassword = findViewById(R.id.edPassword);
         tvSignUp = findViewById(R.id.tvSignUp);
@@ -57,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                                     if(task.isSuccessful()){
                                         Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                                        finish();
                                     }
                                     else {
                                         Toast.makeText(LoginActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();

@@ -18,14 +18,13 @@
             android:paddingBottom="5dp"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginTop="20dp"/>
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/tilDisplayName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:paddingLeft="20dp">
@@ -76,8 +75,9 @@
             android:id="@+id/btnSignUp"
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:text="SIGN UP"
+            app:fButtonColor="@color/colorPrimary"
             android:textSize="20sp"
             android:layout_gravity="center"/>
         <TextView
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:text="OR"
             android:textSize="25dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"/>
 
         <com.shobhitpuri.custombuttons.GoogleSignInButton
@@ -93,7 +93,7 @@
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 
